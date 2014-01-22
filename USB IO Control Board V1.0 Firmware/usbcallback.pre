@@ -1,5 +1,5 @@
 
-# 1 "C:\Users\Gaurav\Documents\Mplab Project\USB IO Board\USB Io board fimware source\usbcallback.c"
+# 1 "C:\Users\Gaurav\Documents\GitHub\USB-IO-Control-Board\USB IO Control Board V1.0 Firmware\usbcallback.c"
 
 # 2 "C:\Program Files (x86)\HI-TECH Software\PICC-18\PRO\9.65\include\stddef.h"
 typedef int ptrdiff_t;
@@ -9,7 +9,7 @@ typedef unsigned short wchar_t;
 # 13
 extern int errno;
 
-# 64 "C:\Users\Gaurav\Documents\Mplab Project\USB IO Board\USB Io board fimware source\GenericTypeDefs.h"
+# 64 "C:\Users\Gaurav\Documents\GitHub\USB-IO-Control-Board\USB IO Control Board V1.0 Firmware\GenericTypeDefs.h"
 typedef enum _BOOL { FALSE = 0, TRUE } BOOL;
 typedef enum _BIT { CLEAR = 0, SET } BIT;
 
@@ -2319,7 +2319,7 @@ extern  char * strichr(const char *, int);
 extern  char * strrchr(const char *, int);
 extern  char * strrichr(const char *, int);
 
-# 168 "C:\Users\Gaurav\Documents\Mplab Project\USB IO Board\USB Io board fimware source\usb_common.h"
+# 168 "C:\Users\Gaurav\Documents\GitHub\USB-IO-Control-Board\USB IO Control Board V1.0 Firmware\usb_common.h"
 typedef union
 {
 BYTE bitmap;
@@ -2453,7 +2453,7 @@ BYTE current;
 # 444
 typedef BOOL (*USB_EVENT_HANDLER) ( USB_EVENT event, void *data, unsigned int size );
 
-# 114 "C:\Users\Gaurav\Documents\Mplab Project\USB IO Board\USB Io board fimware source\usb_ch9.h"
+# 114 "C:\Users\Gaurav\Documents\GitHub\USB-IO-Control-Board\USB IO Control Board V1.0 Firmware\usb_ch9.h"
 typedef struct  _USB_DEVICE_DESCRIPTOR
 {
 BYTE bLength;
@@ -2668,7 +2668,7 @@ unsigned :8;
 
 } CTRL_TRF_SETUP, SETUP_PKT, *PSETUP_PKT;
 
-# 118 "C:\Users\Gaurav\Documents\Mplab Project\USB IO Board\USB Io board fimware source\usb_device.h"
+# 118 "C:\Users\Gaurav\Documents\GitHub\USB-IO-Control-Board\USB IO Control Board V1.0 Firmware\usb_device.h"
 typedef enum
 {
 
@@ -2852,7 +2852,7 @@ extern  BOOL RemoteWakeup;
 extern  USB_DEVICE_STATE USBDeviceState;
 extern  BYTE USBActiveConfiguration;
 
-# 308 "C:\Users\Gaurav\Documents\Mplab Project\USB IO Board\USB Io board fimware source\usb_hal_pic18.h"
+# 308 "C:\Users\Gaurav\Documents\GitHub\USB-IO-Control-Board\USB IO Control Board V1.0 Firmware\usb_hal_pic18.h"
 typedef union _BD_STAT
 {
 BYTE Val;
@@ -2949,7 +2949,7 @@ extern  IN_PIPE inPipes[1];
 extern  OUT_PIPE outPipes[1];
 extern volatile BDT_ENTRY *pBDTEntryIn[1+1];
 
-# 6 "C:\Users\Gaurav\Documents\Mplab Project\USB IO Board\USB Io board fimware source\genericHID.h"
+# 6 "C:\Users\Gaurav\Documents\GitHub\USB-IO-Control-Board\USB IO Control Board V1.0 Firmware\genericHID.h"
 unsigned char ReceivedDataBuffer[64] @ 0x480;
 unsigned char ToSendDataBuffer[64] @ 0x4C0;
 
@@ -2957,7 +2957,7 @@ void* USBOutHandle = 0;
 void* USBInHandle = 0;
 BOOL blinkStatusValid = TRUE;
 
-# 306 "C:\Users\Gaurav\Documents\Mplab Project\USB IO Board\USB Io board fimware source\usb_function_hid.h"
+# 306 "C:\Users\Gaurav\Documents\GitHub\USB-IO-Control-Board\USB IO Control Board V1.0 Firmware\usb_function_hid.h"
 typedef struct _USB_HID_DSC_HEADER
 {
 BYTE bDescriptorType;
@@ -2991,7 +2991,7 @@ extern const struct{BYTE report[29];}hid_rpt01;
 
 void USBCheckHIDRequest(void);
 
-# 43 "C:\Users\Gaurav\Documents\Mplab Project\USB IO Board\USB Io board fimware source\usbcallback.c"
+# 43 "C:\Users\Gaurav\Documents\GitHub\USB-IO-Control-Board\USB IO Control Board V1.0 Firmware\usbcallback.c"
 void USBCBSuspend(void)
 {
 
