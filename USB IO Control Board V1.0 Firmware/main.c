@@ -173,8 +173,7 @@ void ProcessIO(void)
 				ADCON0= 0x01;
 				ADCON1 = 0x09;
 				ADCON2 = 0x8D;
- 				TRISB = 0xFF;
-				TRISD = 0xFF;
+
 				ADCON0bits.GODONE =1;	
 				ToSendDataBuffer[1] =PORTB;
 			 	ToSendDataBuffer[2] =PORTD;
