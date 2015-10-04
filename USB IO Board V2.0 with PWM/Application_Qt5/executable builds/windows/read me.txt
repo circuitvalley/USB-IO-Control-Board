@@ -1,1 +1,15 @@
-extract required_dll.zip file before running the application.you may need to provide additional dll file if needed.
+extract all of .zip file in same dir as the application before launching the application. 
+you may need to provide additional dll file if needed.
+
+dll are packed in sperate file because github does not all file size larger than 100MB
+
+minimum required dll are 
+
+Qt5Cored.dll
+Qt5Guid.dll
+Qt5Widgets.dll
+Qt5Widgetsd.dll
+icudt52.dll
+icuin52.dll
+icuuc52.dll
+libwinpthread-1.dll
