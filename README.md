@@ -1,4 +1,4 @@
-IR-Remote-Control
+USB-IO-Control-Board
 =================
 /* 
  * File:   main.c
